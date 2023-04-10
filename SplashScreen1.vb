@@ -15,8 +15,9 @@
             ApplicationTitle.Text = My.Application.Info.Title
         Else
             'If the application title is missing, use the application name, without the extension
-            ApplicationTitle.Text = System.IO.Path.GetFileNameWithoutExtension(My.Application.Info.AssemblyName)
+            ApplicationTitle.Text = "Karaoke Music"
         End If
+        ApplicationTitle.Text = "Karaoke Music"
 
         'Format the version information using the text set into the Version control at design time as the
         '  formatting string.  This allows for effective localization if desired.
@@ -32,4 +33,7 @@
         Copyright.Text = My.Application.Info.Copyright
     End Sub
 
+    Private Sub ApplicationTitle_Click(sender As Object, e As EventArgs) Handles ApplicationTitle.Click
+
+    End Sub
 End Class
